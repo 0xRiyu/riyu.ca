@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.riyu.ca",
     title: "RiyuDev",
   },
   plugins: [
@@ -14,5 +14,7 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    "gatsby-plugin-mdx",
+    "moment"
   ],
 };
