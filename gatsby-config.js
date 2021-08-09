@@ -1,3 +1,6 @@
+
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.riyu.ca",
@@ -6,15 +9,24 @@ module.exports = {
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `writings`,
+        path: path.join(__dirname, `writings`),
+      },
+    },
+    "gatsby-plugin-sharp",
     "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-styled-components",
     "moment"
   ],
 };

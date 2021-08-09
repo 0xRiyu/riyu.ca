@@ -4,8 +4,6 @@ const path = require(`path`);
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-
-  console.log(`Node created of type "${node.internal.type}"`);
   if (node.internal.type === `Mdx`) {
     const postDate = moment(node.frontmatter.date); // Use moment.js to easily change date format.
     const url = `/${postDate.format("YYYY/MM/DD")}/${node.frontmatter.slug}`;
@@ -35,10 +33,9 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
   result.data.allMdx.edges.forEach(({ node }) => {
-    console.log(`Node id : ${node.id}`);
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/templates/blogpost.js`),
+      component: path.resolve(`./src/templates/journal-entry.js`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.

@@ -1,15 +1,10 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
-import {
-  container,
-  heading,
-  navLinks,
-  navLinkText,
-  navLinkItem,
-  siteTitle
-} from "./layout.module.css";
+import { useStaticQuery, graphql } from "gatsby";
+import { container } from "./layout.module.css";
+import Navbar from "./Navbar";
+import Header from "./Header";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, pageSubTitle, pageHeaderImage, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -20,34 +15,17 @@ const Layout = ({ pageTitle, children }) => {
     }
   `);
   return (
-    <div className={container}>
-      <title>
-        {pageTitle} | {data.site.siteMetadata.title}
-      </title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-      <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-              Home
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
+    <div>
+      <Navbar siteTitle={data.site.siteMetadata.title} />
+      <Header pageTitle={pageTitle} subTitle={pageSubTitle} pageHeaderImage={pageHeaderImage} />
+      <div className={container}>
+        <title>
+          {pageTitle} | {data.site.siteMetadata.title}
+        </title>
+        <main>
+          {children}
+        </main>
+      </div>
     </div>
   );
 };

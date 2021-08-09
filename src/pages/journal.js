@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import webpageBanner from "../images/book-cart.jpg";
 
-const BlogPage = ({ data }) => {
+const JournalPage = ({ data }) => {
   return (
-    <Layout pageTitle="My Writings">
+    <Layout pageTitle="Journal" pageHeaderImage={webpageBanner}>
       {data.allMdx.nodes.map((node) => (
         <article key={node.id}>
           <h2>
@@ -34,4 +35,4 @@ export const query = graphql`
   }
 `;
 
-export default BlogPage;
+export default JournalPage;

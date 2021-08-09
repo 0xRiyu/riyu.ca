@@ -1,0 +1,19 @@
+html {
+  background-color: #1e2428;
+}
+
+p,
+html,
+body,
+div,
+span,
+h1,
+h2,
+header,
+a {
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}

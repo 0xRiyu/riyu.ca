@@ -16,16 +16,25 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.10.2",
+    "gatsby-background-image": "^1.5.3",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-mdx": "^2.11.0",
     "gatsby-plugin-netlify-cms": "^5.10.0",
-    "gatsby-plugin-sharp": "^3.10.2",
+    "gatsby-plugin-sharp": "^3.11.0",
+    "gatsby-plugin-styled-components": "^4.11.0",
     "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.11.0",
+    "gbimage-bridge": "^0.1.4",
     "moment": "^2.29.1",
     "netlify-cms-app": "^2.15.31",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "sharp": "^0.28.3",
+    "styled-components": "^5.3.0"
   },
   "main": "gatsby-config.js",
   "repository": {
