@@ -27,13 +27,13 @@ const IndexPage = () => {
           <Card
             frontBackgroundImageUrl="//source.unsplash.com/300x402"
             backBackgroundImageUrl="//source.unsplash.com/300x302"
-            frontContent="DirectX"
+            frontContent="Bonsai"
             backContent="fun fun"
           />
           <Card
             frontBackgroundImageUrl="//source.unsplash.com/300x403"
             backBackgroundImageUrl="//source.unsplash.com/300x303"
-            frontContent="OpenGL"
+            frontContent="OpenGL 3D"
             backContent="fun fun"
           />
           <Card
@@ -51,7 +51,7 @@ const IndexPage = () => {
           <Card
             frontBackgroundImageUrl="//source.unsplash.com/300x406"
             backBackgroundImageUrl="//source.unsplash.com/300x306"
-            frontContent="RayTracer"
+            frontContent="Resume"
             backContent="fun fun"
           />
         </div>

@@ -9,11 +9,19 @@
   cursor: pointer;
   width: calc(33% - 2rem);
   min-width: calc(33% - 2rem);
-  min-height: 350px;
+  min-height: 300px;
   perspective: 1000px;
   margin: 1rem;
   position: relative;
+  opacity: 0;
+  -webkit-animation: fadein 3s, slideOnLoad 1s 1;; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s, slideOnLoad 1s 1;
+  animation-fill-mode: forwards;
 }
+
 @media screen and (max-width: 800px) {
   .card {
     width: calc(50% - 2rem);
@@ -25,8 +33,58 @@
   }
 }
 
+@keyframes slideOnLoad
+{
+    0% {top:100px;}
+    100% {top:0px;}
+}
+@-webkit-keyframes slideOnLoad
+{
+    0% {top:100px;}
+    100% {top:0px;}
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .front,
-.back {
+.back{
   display: flex;
   border-radius: 8px;
   background-position: center;
@@ -41,7 +99,23 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  transition: ease-in-out 600ms;
+  transition: ease-in-out 700ms;
+  box-shadow: 0 0 0 1px rgba(25,25,25,0.75);
+}
+
+.shadow {
+    transform: translateX(7px) translateY(6px);
+    display: flex;
+    border-radius: 8px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+    background-color:black;
+    transition: ease-in-out 650ms;
+    margin: 0 auto;
+    z-index: -1;
+    filter: drop-shadow(0 0 1px rgba(0,0,0,0.75));
 }
 
 .front {
@@ -63,10 +137,24 @@
   bottom: 0;
   opacity: 0.25;
   z-index: -1;
+  background-image: linear-gradient(234deg, #394245 0%, #000 100%);
 }
+
 .card:hover .front {
   transform: rotateY(180deg);
 }
+
+.card:hover .front ~ .shadow {
+    transform: scaleX(-1) scaleY(-1) scaleZ(-1) translateX(-7px) translateY(-6px)
+}
+
+@keyframes narrowDiv
+{
+    0% {width:100%;}
+    50% {width:0%;}
+    100% {width:100%;}
+}
+
 .card:nth-child(even):hover .front {
   transform: rotateY(-180deg);
 }

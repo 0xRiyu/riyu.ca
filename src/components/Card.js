@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  card,
-  front,
-  back,
-  button,
-} from "./Card.module.css";
+import { card, front, back, button, shadow } from "./Card.module.css";
 
 const Card = ({
   frontBackgroundImageUrl,
@@ -14,6 +9,8 @@ const Card = ({
 }) => {
   return (
     <a className={card} href="#!">
+      {/*
+       */}
       <div
         className={front}
         style={{ backgroundImage: `url(${frontBackgroundImageUrl})` }}
@@ -29,6 +26,7 @@ const Card = ({
           <button className={button}>Github</button>
         </div>
       </div>
+      <div className={shadow} />
     </a>
   );
 };
