@@ -9,6 +9,7 @@ import {
   socialLinks,
   socialListItem,
   socialListItemLink
+
 } from "./Header.module.css";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa/";
 
@@ -30,17 +31,17 @@ const Header = ({ pageTitle, subTitle, pageHeaderImage }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub/>
+              <FaGithub />
             </a>
           </li>
           <li className={socialListItem}>
             <a
               className={socialListItemLink}
-              href="https://github.com/riyusuna"
+              href="https://twitter.com/0xRiyu"
               target="_blank"
               rel="noreferrer"
             >
-              <FaTwitter />
+              <FaTwitter/>
             </a>
           </li>
           <li className={socialListItem}>
@@ -50,7 +51,7 @@ const Header = ({ pageTitle, subTitle, pageHeaderImage }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin style={{ textShadow: "2px 2px #000"}}/>
+              <FaLinkedin/>
             </a>
           </li>
         </div>

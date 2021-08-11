@@ -4,7 +4,7 @@ import webpageBanner from "../images/street.jpg";
 import {
   contentContainer,
   cardContainer,
-} from "../styles/card-content-container.module.css";
+} from "../styles/content-container.module.css";
 
 import Card from "../components/Card";
 
