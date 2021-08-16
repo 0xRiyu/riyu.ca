@@ -15,24 +15,26 @@ const JournalPage = ({ data }) => {
       {data.allMdx.nodes.map((node) => (
         <article key={node.id}>
           <div className={contentContainer}>
-            <div className={`${articleContent}`}>
-              <div className={blogEntryBg}>
-                <img
-                  src={
-                    require("../images/" + node.frontmatter.featuredImage)
-                      .default
-                  }
-                />
+            <Link to={`${node.fields.slug}`}>
+              <div className={articleContent}>
+                <div className={blogEntryBg}>
+                  <img
+                    src={
+                      node.frontmatter.featuredImage
+                        ? require("../images/" + node.frontmatter.featuredImage)
+                            .default
+                        : require("../images/street.jpg").default
+                    }
+                  />
+                </div>
+                <div className={articleEntry}>
+                  <h2>{node.frontmatter.title}</h2>
+                  <p style={{ lineHeight: 2 }}>
+                    {node.frontmatter.date}
+                  </p>
+                </div>
               </div>
-              <div className={articleEntry}>
-                <h2>
-                  <Link to={`${node.fields.slug}`}>
-                    {node.frontmatter.title}
-                  </Link>
-                </h2>
-                <p style={{ lineHeight: 2 }}>Posted: {node.frontmatter.date}</p>
-              </div>
-            </div>
+            </Link>
           </div>
         </article>
       ))}

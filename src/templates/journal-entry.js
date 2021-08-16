@@ -11,9 +11,8 @@ import {
 
 const JournalEntry = ({ data }) => {
   var webpageBanner = data.mdx.frontmatter.featuredImage
-    ? data.mdx.frontmatter.featuredImage
+    ? require("../images/" + data.mdx.frontmatter.featuredImage).default
     : webpageDefaultBanner;
-
   return (
     <Layout
       pageTitle={data.mdx.frontmatter.title}
