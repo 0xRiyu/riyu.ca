@@ -2,6 +2,11 @@ html {
   background-color: #1e2428;
 }
 
+@font-face {
+    font-family: 'SourceSansPro';
+    src: local('SourceSansPro'), url(fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
+}
+
 p,
 html,
 body,

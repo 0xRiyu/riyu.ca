@@ -15,8 +15,8 @@ const JournalPage = ({ data }) => {
       {data.allMdx.nodes.map((node) => (
         <article key={node.id}>
           <div className={contentContainer}>
-            <Link to={`${node.fields.slug}`}>
-              <div className={articleContent}>
+            <Link to={`${node.fields.slug}`} style={{textDecoration: "none"}}>
+              <div className={articleEntry}>
                 <div className={blogEntryBg}>
                   <img
                     src={
@@ -27,12 +27,8 @@ const JournalPage = ({ data }) => {
                     }
                   />
                 </div>
-                <div className={articleEntry}>
-                  <h2>{node.frontmatter.title}</h2>
-                  <p style={{ lineHeight: 2 }}>
-                    {node.frontmatter.date}
-                  </p>
-                </div>
+                <h2>{node.frontmatter.title}</h2>
+                <p style={{ lineHeight: 2 }}>{node.frontmatter.date}</p>
               </div>
             </Link>
           </div>

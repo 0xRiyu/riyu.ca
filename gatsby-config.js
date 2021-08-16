@@ -4,7 +4,7 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.riyu.ca",
-    title: "RiyuDev",
+    title: "Riyu",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

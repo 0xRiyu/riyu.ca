@@ -20,7 +20,7 @@ const Layout = ({ pageTitle, pageSubTitle, pageHeaderImage, children }) => {
       <Header pageTitle={pageTitle} subTitle={pageSubTitle} pageHeaderImage={pageHeaderImage} />
       <div className={container}>
         <title>
-          {pageTitle} | {data.site.siteMetadata.title}
+        {data.site.siteMetadata.title} | {pageTitle}
         </title>
         <main>
           {children}
