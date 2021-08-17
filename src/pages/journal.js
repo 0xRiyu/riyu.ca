@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import webpageBanner from "../images/book-cart.jpg";
 import {
   contentContainer,
-  articleContent,
   blogEntryBg,
   articleEntry,
 } from "../styles/content-container.module.css";

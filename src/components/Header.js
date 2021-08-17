@@ -27,7 +27,7 @@ const Header = ({ pageTitle, subTitle, pageHeaderImage }) => {
           <li className={socialListItem}>
             <a
               className={socialListItemLink}
-              href="https://github.com/riyusuna"
+              href="https://github.com/0xRiyu"
               target="_blank"
               rel="noreferrer"
             >

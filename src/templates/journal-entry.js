@@ -16,15 +16,13 @@ const JournalEntry = ({ data }) => {
   return (
     <Layout
       pageTitle={data.mdx.frontmatter.title}
+      pageSubTitle={data.mdx.frontmatter.date}
       pageHeaderImage={webpageBanner}
     >
       <div className={contentContainer}>
         <div className={articleContent}>
-          <div className={articleEntry}>
-            <p>{data.mdx.frontmatter.date}</p>
             <MDXRenderer>{data.mdx.body}</MDXRenderer>
           </div>
-        </div>
       </div>
     </Layout>
   );

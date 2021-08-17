@@ -15,15 +15,17 @@
 }
 
 .article-content {
-  width: 900px;
+  width: 950px;
   max-width: 100%;
-  padding-left: 10px;
-  padding-top: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
   margin: 20px auto auto;
   margin-top: -40px;
   border-radius: 15px;
   overflow: hidden;
-  background-color: #1e2428;
+  background-color: #21262d;
   filter: drop-shadow(6px 7px 1px rgba(0, 0, 0, 0.55));
   border: 2px solid black;
   position: relative;
@@ -33,35 +35,40 @@
   -o-animation: fadein 2s, slideOnLoad 1.5s 1; /* Opera < 12.1 */
   animation: fadein 2s, slideOnLoad 1.5s 1;
   animation-fill-mode: forwards;
-
-}
-
-.article-content p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-family: SourceSansPro, Helvetica, sans-serif;
+  font-size: 21px;
   line-height: 2;
 }
 
-.article-entry {
-  width: 850px;
-  height: 100px;
-  max-width: 100%;
-  padding: 20px;
-  margin: 20px auto auto;
-  margin-top: -40px;
-  border-radius: 15px;
-  overflow: hidden;
-  background-color: #1e2428;
-  filter: drop-shadow(6px 7px 1px rgba(0, 0, 0, 0.55));
-  border: 2px solid black;
-  position: relative;
-  -webkit-animation: fadein 2s, slideOnLoad 1.5s 1; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s, slideOnLoad 1.5s 1; /* Firefox < 16 */
-  -ms-animation: fadein 2s, slideOnLoad 1.5s 1; /* Internet Explorer */
-  -o-animation: fadein 2s, slideOnLoad 1.5s 1; /* Opera < 12.1 */
-  animation: fadein 2s, slideOnLoad 1.5s 1;
-  animation-fill-mode: forwards;
+.article-content p {
+  color: #c9d1d9;
 }
+
+.article-content a {
+  color: rgb(112, 155, 235);
+  text-decoration: none;
+}
+
+.article-entry {
+    width: 850px;
+    height: 100px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px auto auto;
+    margin-top: -40px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #2b3135;
+    filter: drop-shadow(6px 7px 1px rgba(0, 0, 0, 0.55));
+    border: 2px solid black;
+    position: relative;
+    -webkit-animation: fadein 2s, slideOnLoad 1.5s 1; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s, slideOnLoad 1.5s 1; /* Firefox < 16 */
+    -ms-animation: fadein 2s, slideOnLoad 1.5s 1; /* Internet Explorer */
+    -o-animation: fadein 2s, slideOnLoad 1.5s 1; /* Opera < 12.1 */
+    animation: fadein 2s, slideOnLoad 1.5s 1;
+    animation-fill-mode: forwards;
+  }
 
 @keyframes slideOnLoad {
   0% {
