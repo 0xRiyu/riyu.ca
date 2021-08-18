@@ -23,7 +23,7 @@ const JournalPage = ({ data }) => {
                         ? require("../images/" + node.frontmatter.featuredImage)
                             .default
                         : require("../images/street.jpg").default
-                    }
+                    } alt="Webpage banner"
                   />
                 </div>
                 <h2>{node.frontmatter.title}</h2>

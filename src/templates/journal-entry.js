@@ -5,8 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import webpageDefaultBanner from "../images/street.jpg";
 import {
   contentContainer,
-  articleContent,
-  articleEntry,
+  articleContent
 } from "../styles/content-container.module.css";
 
 const JournalEntry = ({ data }) => {

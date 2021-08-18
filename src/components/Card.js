@@ -13,13 +13,13 @@ const Card = ({
        */}
       <div
         className={front}
-        style={{ backgroundImage: `url(${frontBackgroundImageUrl})` }}
+        style={{ backgroundImage: `url(` + require(`../images/${frontBackgroundImageUrl}`).default + `)` }}
       >
         <p>{frontContent}</p>
       </div>
       <div
         className={back}
-        style={{ backgroundImage: `url(${backBackgroundImageUrl})` }}
+        style={{ backgroundImage: `url(` + require(`../images/${backBackgroundImageUrl}`).default + `)` }}
       >
         <div>
           <p>{backContent}</p>

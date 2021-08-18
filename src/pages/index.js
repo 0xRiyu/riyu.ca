@@ -19,39 +19,39 @@ const IndexPage = () => {
       <div className={contentContainer}>
         <div className={cardContainer}>
           <Card
-            frontBackgroundImageUrl="//source.unsplash.com/300x401"
-            backBackgroundImageUrl="//source.unsplash.com/300x301"
+            frontBackgroundImageUrl="Yare/08.18.2021-sandbox.jpg"
+            backBackgroundImageUrl="Yare/08.18.2021-sandbox.jpg"
             frontContent="Yare"
             backContent="fun fun"
           />
           <Card
-            frontBackgroundImageUrl="//source.unsplash.com/300x402"
-            backBackgroundImageUrl="//source.unsplash.com/300x302"
+            frontBackgroundImageUrl="bonsai/flowers.png"
+            backBackgroundImageUrl="bonsai/flowers.png"
             frontContent="Bonsai"
             backContent="fun fun"
           />
           <Card
-            frontBackgroundImageUrl="//source.unsplash.com/300x403"
-            backBackgroundImageUrl="//source.unsplash.com/300x303"
+            frontBackgroundImageUrl="opengl-3dengine/wireframe.png"
+            backBackgroundImageUrl="opengl-3dengine/wireframe.png"
             frontContent="OpenGL 3D"
             backContent="fun fun"
           />
           <Card
-            frontBackgroundImageUrl="//source.unsplash.com/300x404"
-            backBackgroundImageUrl="//source.unsplash.com/300x304"
-            frontContent="Website"
+            frontBackgroundImageUrl="website-css-carbon.png"
+            backBackgroundImageUrl="website-css-carbon.png"
+            frontContent="RiyuDev"
             backContent="fun fun"
           />
           <Card
-            frontBackgroundImageUrl="//source.unsplash.com/300x405"
-            backBackgroundImageUrl="//source.unsplash.com/300x305"
-            frontContent="VsCode Ext"
+            frontBackgroundImageUrl="Raytrace.png"
+            backBackgroundImageUrl="Raytrace.png"
+            frontContent="Raytracer"
             backContent="fun fun"
           />
           <Card
-            frontBackgroundImageUrl="//source.unsplash.com/300x406"
-            backBackgroundImageUrl="//source.unsplash.com/300x306"
-            frontContent="Resume"
+            frontBackgroundImageUrl="building-escape/buildingescape.jpg"
+            backBackgroundImageUrl="building-escape/buildingescape.gif"
+            frontContent="Building Escape"
             backContent="fun fun"
           />
         </div>
