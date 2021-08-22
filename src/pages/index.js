@@ -22,37 +22,45 @@ const IndexPage = () => {
             frontBackgroundImageUrl="Yare/08.18.2021-sandbox.jpg"
             backBackgroundImageUrl="Yare/08.18.2021-sandbox.jpg"
             frontContent="Yare"
-            backContent="fun fun"
+            backContent="A Vulkan Renderer Written In C++"
+            projectPageLink="/projects/yare"
+            githubLink="https://github.com/0xRiyu/Yare"
           />
           <Card
             frontBackgroundImageUrl="bonsai/flowers.png"
             backBackgroundImageUrl="bonsai/flowers.png"
             frontContent="Bonsai"
-            backContent="fun fun"
+            backContent="A DirectX 11 Renderer Written In C++"
+            githubLink="https://github.com/0xRiyu/Bonsai-Engine"
           />
           <Card
             frontBackgroundImageUrl="opengl-3dengine/wireframe.png"
             backBackgroundImageUrl="opengl-3dengine/wireframe.png"
             frontContent="OpenGL 3D"
-            backContent="fun fun"
+            backContent="A OpenGl Renderer Written In C++"
+            githubLink="https://github.com/0xRiyu/OpenGL-3D-Engine"
           />
           <Card
             frontBackgroundImageUrl="website-css-carbon.png"
             backBackgroundImageUrl="website-css-carbon.png"
             frontContent="RiyuDev"
-            backContent="fun fun"
+            backContent="My Personal Site Built With Gatsby"
+            projectPageLink="/projects/homecookedwebsite"
+            githubLink="https://github.com/0xRiyu/Riyu.ca"
           />
           <Card
             frontBackgroundImageUrl="Raytrace.png"
             backBackgroundImageUrl="Raytrace.png"
             frontContent="Raytracer"
-            backContent="fun fun"
+            backContent="A Raytracer built with Peter Shirleys 'Raytracing In One Weekend'"
+            githubLink="https://github.com/0xRiyu/Raytracer"
           />
           <Card
             frontBackgroundImageUrl="building-escape/buildingescape.jpg"
             backBackgroundImageUrl="building-escape/buildingescape.gif"
             frontContent="Building Escape"
-            backContent="fun fun"
+            backContent="A UnrealEngine 4 Puzzle Game"
+            githubLink="https://github.com/0xRiyu/Building-Escape"
           />
         </div>
       </div>

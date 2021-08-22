@@ -6,7 +6,6 @@
 
 .card {
   color: inherit;
-  cursor: pointer;
   width: calc(33% - 2rem);
   min-width: calc(33% - 2rem);
   min-height: 300px;
@@ -14,7 +13,7 @@
   margin: 1rem;
   position: relative;
   opacity: 0;
-  -webkit-animation: fadein 3s, slideOnLoad 1s 1;; /* Safari, Chrome and Opera > 12.1 */
+  -webkit-animation: fadein 3s, slideOnLoad 1s 1; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s, slideOnLoad 1s 1; /* Firefox < 16 */
   -ms-animation: fadein 3s, slideOnLoad 1s 1; /* Internet Explorer */
   -o-animation: fadein 3s, slideOnLoad 1s 1; /* Opera < 12.1 */
@@ -33,15 +32,21 @@
   }
 }
 
-@keyframes slideOnLoad
-{
-    0% {top:100px;}
-    100% {top:0px;}
+@keyframes slideOnLoad {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
 }
-@-webkit-keyframes slideOnLoad
-{
-    0% {top:100px;}
-    100% {top:0px;}
+@-webkit-keyframes slideOnLoad {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 @keyframes fadein {
@@ -84,7 +89,7 @@
 }
 
 .front,
-.back{
+.back {
   display: flex;
   border-radius: 8px;
   background-position: center;
@@ -100,23 +105,23 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 700ms;
-  box-shadow: 0 0 0 1px rgba(25,25,25,0.75);
+  box-shadow: 0 0 0 1px rgba(25, 25, 25, 0.75);
   border: 1px solid black;
 }
 
 .shadow {
-    transform: translateX(7px) translateY(6px);
-    display: flex;
-    border-radius: 8px;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 30%;
-    background-color:black;
-    transition: ease-in-out 650ms;
-    margin: 0 auto;
-    z-index: -1;
-    filter: drop-shadow(0 0 1px rgba(0,0,0,0.75));
+  transform: translateX(7px) translateY(6px);
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 30%;
+  background-color: black;
+  transition: ease-in-out 650ms;
+  margin: 0 auto;
+  z-index: -1;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.75));
 }
 
 .front {
@@ -141,19 +146,37 @@
   background-image: linear-gradient(234deg, #394245 0%, #000 100%);
 }
 
+.back:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.25;
+  z-index: -1;
+  background-image: linear-gradient(234deg, #394245 0%, #000 100%);
+}
+
 .card:hover .front {
   transform: rotateY(180deg);
 }
 
 .card:hover .front ~ .shadow {
-    transform: scaleX(-1) scaleY(-1) scaleZ(-1) translateX(-7px) translateY(-6px)
+  transform: scaleX(-1) scaleY(-1) scaleZ(-1) translateX(-7px) translateY(-6px);
 }
 
-@keyframes narrowDiv
-{
-    0% {width:100%;}
-    50% {width:0%;}
-    100% {width:100%;}
+@keyframes narrowDiv {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .card:nth-child(even):hover .front {
@@ -162,15 +185,26 @@
 
 .back {
   transform: rotateY(-180deg);
-  padding: 0 2em;
+  padding: 0 1em;
 }
+
+.back p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+.front p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
 .back .button {
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  background: linear-gradient(135deg, #831ae6, #1a57e6);
 }
-.back .button:before {
-  box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
-  background-color: rgba(26, 87, 230, 0.25);
-}
+
 .card:hover .back {
   transform: rotateY(0deg);
 }
@@ -183,28 +217,30 @@
 }
 
 .button {
-  transform: translateZ(40px);
+  transform: translateZ(25px);
   cursor: pointer;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   font-weight: bold;
   color: #fff;
   padding: 0.5em 1em;
+  margin: 0.5em;
   border-radius: 100px;
   font: inherit;
   border: none;
   position: relative;
   transform-style: preserve-3d;
   transition: 300ms ease;
+  text-decoration: none;
+  text-shadow: 2px 2px black;
 }
 .button:before {
   transition: 300ms ease;
   position: absolute;
   display: block;
   content: "";
-  transform: translateZ(-40px);
+  transform: translateZ(-25px);
   transform-style: preserve-3d;
-
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   height: calc(100% - 20px);

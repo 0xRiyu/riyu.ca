@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { card, front, back, button, shadow } from "./Card.module.css";
 
 const Card = ({
@@ -6,28 +7,50 @@ const Card = ({
   backBackgroundImageUrl,
   frontContent,
   backContent,
+  projectPageLink = "#!",
+  githubLink,
 }) => {
+  var hasProjectPage = projectPageLink !== "#!";
+
   return (
-    <a className={card} href="#!">
+    <div className={card}>
       {/*
        */}
       <div
         className={front}
-        style={{ backgroundImage: `url(` + require(`../images/${frontBackgroundImageUrl}`).default + `)` }}
+        style={{
+          backgroundImage:
+            `url(` +
+            require(`../images/${frontBackgroundImageUrl}`).default +
+            `)`,
+        }}
       >
         <p>{frontContent}</p>
       </div>
       <div
         className={back}
-        style={{ backgroundImage: `url(` + require(`../images/${backBackgroundImageUrl}`).default + `)` }}
+        style={{
+          backgroundImage:
+            `url(` +
+            require(`../images/${backBackgroundImageUrl}`).default +
+            `)`,
+        }}
       >
         <div>
           <p>{backContent}</p>
-          <button className={button}>Github</button>
+          <br /> <br />
+          {hasProjectPage ? (
+            <Link to={projectPageLink}>
+              <button className={button}>Project</button>
+            </Link>
+          ) : null}
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            <button className={button}>GitHub</button>
+          </a>
         </div>
       </div>
       <div className={shadow} />
-    </a>
+    </div>
   );
 };
 
