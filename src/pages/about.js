@@ -12,10 +12,10 @@ const AboutPage = () => {
       <div className={contentContainer}>
         <div className={articleContent}>
           <p>
-            I'm <b>Drew Cornfield</b>, a Canadian software engineer, also known
+            I'm <b>Drew Cornfield</b>, a Canadian software developer, also known
             as <em>Riyu</em> by some of my peers.
             <br />
-            <br />I currently work as a tools developer at{" "}
+            <br />I currently develop internal software tools at{" "}
             <a href="https://www.amd.com/en" target="_blank" rel="noreferrer">
               AMD
             </a>{" "}
