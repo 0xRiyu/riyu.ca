@@ -1,4 +1,3 @@
-const { createFilePath } = require(`gatsby-source-filesystem`);
 const moment = require(`moment`);
 const path = require(`path`);
 
@@ -20,7 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const result = await graphql(`
     query {
-      allMdx {
+      allMdx(filter: {frontmatter: {type: {eq: "article"}}}){
         edges {
           node {
             fields {
@@ -33,6 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
   result.data.allMdx.edges.forEach(({ node }) => {
+    console.log(node.id)
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/templates/journal-entry.js`),

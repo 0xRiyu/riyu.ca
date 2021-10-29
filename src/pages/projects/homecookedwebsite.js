@@ -6,7 +6,7 @@ import {
   articleContent,
 } from "../../styles/content-container.module.css";
 
-const AboutPage = () => {
+const WebsiteProjectPage = () => {
   return (
     <Layout pageTitle="Riyu.ca (This Website 🙂)" pageHeaderImage={webpageBanner}>
       <div className={contentContainer}>
@@ -20,4 +20,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default WebsiteProjectPage;

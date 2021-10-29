@@ -39,7 +39,7 @@ const JournalPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }, filter: {frontmatter: {type: {eq: "article"}}}) {
       nodes {
         frontmatter {
           date(formatString: "MMMM D, YYYY")
