@@ -17,7 +17,7 @@ const WebsitePage = () => {
     }
   `);
   return (
-    <Layout pageTitle="riyu.ca" pageHeaderImage={webpageBanner}>
+    <Layout pageTitle="About This Website" pageHeaderImage={webpageBanner}>
       <div className={contentContainer}>
         <div className={articleContent}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>

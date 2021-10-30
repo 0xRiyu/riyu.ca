@@ -17,7 +17,7 @@ const YarePage = () => {
     }
   `);
   return (
-    <Layout pageTitle="Yare Project" pageHeaderImage={webpageBanner}>
+    <Layout pageTitle="The Yare Project" pageSubTitle="Doesn't that just sound fancy?" pageHeaderImage={webpageBanner}>
       <div className={contentContainer}>
         <div className={articleContent}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>

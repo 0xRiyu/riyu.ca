@@ -12,7 +12,7 @@ const IndexPage = () => {
   var subTitle = "C++ Developer, GPU Meddler";
   return (
     <Layout
-      pageTitle="Drew | Riyu"
+      pageTitle="Drew ｜ Riyu"
       pageSubTitle={subTitle}
       pageHeaderImage={webpageBanner}
       showSocials={true}
