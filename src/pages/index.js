@@ -12,9 +12,10 @@ const IndexPage = () => {
   var subTitle = "C++ Developer, GPU Meddler";
   return (
     <Layout
-      pageTitle="Drew Cornfield"
+      pageTitle="Drew | Riyu"
       pageSubTitle={subTitle}
       pageHeaderImage={webpageBanner}
+      showSocials={true}
     >
       <div className={contentContainer}>
         <div className={cardContainer}>
@@ -45,7 +46,7 @@ const IndexPage = () => {
             backBackgroundImageUrl="website-css-carbon.png"
             frontContent="RiyuDev"
             backContent="My Personal Site Built With Gatsby"
-            projectPageLink="/projects/homecookedwebsite"
+            projectPageLink="/projects/site"
             githubLink="https://github.com/0xRiyu/Riyu.ca"
           />
           <Card

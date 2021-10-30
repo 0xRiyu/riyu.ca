@@ -4,7 +4,13 @@ import { container, copyright } from "./layout.module.css";
 import Navbar from "./Navbar";
 import Header from "./Header";
 
-const Layout = ({ pageTitle, pageSubTitle, pageHeaderImage, children }) => {
+const Layout = ({
+  pageTitle,
+  pageSubTitle,
+  pageHeaderImage,
+  showSocials,
+  children,
+}) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -17,16 +23,18 @@ const Layout = ({ pageTitle, pageSubTitle, pageHeaderImage, children }) => {
   return (
     <div>
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <Header pageTitle={pageTitle} subTitle={pageSubTitle} pageHeaderImage={pageHeaderImage} />
+      <Header
+        pageTitle={pageTitle}
+        subTitle={pageSubTitle}
+        pageHeaderImage={pageHeaderImage}
+        showSocials={showSocials}
+      />
       <div className={container}>
-        <title>
-        {data.site.siteMetadata.title} | {pageTitle}
-        </title>
-        <main>
-          {children}
-        </main>
+        <title>{pageTitle}</title>
+        <main>{children}</main>
       </div>
-        <p className={copyright}>Drew Cornfield ~ 2021</p><br/>
+      <p className={copyright}>DMC ~ 2021</p>
+      <br />
     </div>
   );
 };

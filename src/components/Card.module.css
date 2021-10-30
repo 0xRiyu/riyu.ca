@@ -37,7 +37,7 @@
     top: 100px;
   }
   100% {
-    top: 0px;
+    top: -15px;
   }
 }
 @-webkit-keyframes slideOnLoad {
@@ -45,7 +45,7 @@
     top: 100px;
   }
   100% {
-    top: 0px;
+    top: -15px;
   }
 }
 

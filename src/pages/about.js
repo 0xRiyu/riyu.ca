@@ -8,7 +8,11 @@ import {
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About" pageHeaderImage={webpageBanner}>
+    <Layout
+      pageTitle="About"
+      pageHeaderImage={webpageBanner}
+      showSocials={true}
+    >
       <div className={contentContainer}>
         <div className={articleContent}>
           <p>
@@ -24,11 +28,11 @@ const AboutPage = () => {
             of other engineers.
             <br />
             Outside of my work, I enjoy building graphics rendering engines
-            (most recently with Vulkan), studying written Japanese
+            (most recently with Vulkan), studying Japanese
             (それわ難しい), reading light novels, and the like.
             <br />
             <br />
-            If you want to learn more, here's my <a href="#!">Resume</a>
+            If you want to learn more, here's my <a href="#!">CV</a>
             <br /> <br />
             This site is a central hub for my personal projects and writings.
             Glad you found it 🙂!

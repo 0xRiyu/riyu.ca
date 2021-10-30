@@ -13,16 +13,17 @@ import {
 } from "./Header.module.css";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa/";
 
-const Header = ({ pageTitle, subTitle, pageHeaderImage }) => {
+const Header = ({ pageTitle, subTitle, pageHeaderImage, showSocials }) => {
   return (
     <div className={headerContent}>
       <div
         className={headerImage}
-        style={{ backgroundImage: `url(${pageHeaderImage})` }}
+        style={{ backgroundImage: `-webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(22,24,26, 1) 100%), url(${pageHeaderImage})` }}
       />
       <div className={pageText}>
         <h1 className={titleWrap}>{pageTitle}</h1>
         <h2 className={titleSubWrap}>{subTitle}</h2>
+        {showSocials == true ? 
         <div className={socialLinks}>
           <li className={socialListItem}>
             <a
@@ -55,6 +56,7 @@ const Header = ({ pageTitle, subTitle, pageHeaderImage }) => {
             </a>
           </li>
         </div>
+      : null}
       </div>
     </div>
   );

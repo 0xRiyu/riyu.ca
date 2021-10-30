@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import webpageBanner from "../../images/Yare/08.18.2021-sandbox.jpg";
+import webpageBanner from "../../images/website-css-carbon.png";
 import { graphql, useStaticQuery } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import {
@@ -8,16 +8,16 @@ import {
   articleContent,
 } from "../../styles/content-container.module.css";
 
-const YarePage = () => {
+const WebsitePage = () => {
   const data = useStaticQuery(graphql`
     query {
-      mdx(fileAbsolutePath: { regex: "/yare.mdx/" }) {
+      mdx(fileAbsolutePath: { regex: "/site.mdx/" }) {
         body
       }
     }
   `);
   return (
-    <Layout pageTitle="Yare Project" pageHeaderImage={webpageBanner}>
+    <Layout pageTitle="riyu.ca" pageHeaderImage={webpageBanner}>
       <div className={contentContainer}>
         <div className={articleContent}>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
@@ -27,4 +27,4 @@ const YarePage = () => {
   );
 };
 
-export default YarePage;
+export default WebsitePage;

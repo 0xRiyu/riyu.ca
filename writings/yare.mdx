@@ -2,4 +2,48 @@
 type: "project"
 ---
 
-YARE (or やれ) is a 3D Rendering Engine that I created from scratch using C++ and Vulkan.
+<hr/>
+
+### YARE
+<hr/>
+
+Yare (or やれ) is a 3D Rendering Engine that I created from scratch using C++ and Vulkan.<br/><br/>
+
+The scope of Yare is achieve "high-quality" environment rendering. See [Features](#Features) and [Next Steps](#NextSteps)
+to learn more about the current and planned capabilities of the engine.<br/>
+
+I'm not a game developer nor a designer, however I enjoy to build software that works with GPUs.
+I particularily like how we can write graphics code today, and see continual improvements over time,
+or write high performance optimizations for the latest hardware architectures available.<br/><br/>
+
+Yare is very very far from being feature complete, as I only work on it in my free time
+outside of my day job. Its a good test bed for trying new things in C++ and getting better at optimization work.<br/><br/>
+<a name="Features"></a>
+<hr/>
+
+### Features
+<hr/>
+→ <b>Model Rendering</b><br/>
+- Supports loading of .obj meshes, material (texture) mapping, and transformations. <br/>
+- Yare also supports skybox rendering, with cube mapped texturing. <br/>
+→ <b>FPS Camera</b><br/>
+- Accepts keyboard input to navigate around the 3D rendered space<br/>
+→ <b>UI Framework</b><br/>
+- Yare implements a pipeline for an ImGui interface, populated with debug and control options<br/>
+→ <b>Vulkan 1.2</b><br/>
+- Yare does all rendering using the latest Vulkan API and SPIR-V shaders.<br/><br/>
+<a name="NextSteps"></a>
+<hr/>
+
+### Next Steps
+<hr/>
+→  <b>Noise Based Terrain Generation</b><br/>
+→  <b>Physics Engine</b><br/>
+→  <b>Lighting</b><br/>
+- Ambient lights, directional lights, point lights, spot lights, dynamic shadows<br/>
+→  <b>Interative Scene Builder</b><br/>
+→  <b>Sound Engine</b>
+<br/><br/>
+<hr/>
+
+The projects source can be found on <a href="https://github.com/0xRiyu/riyu.ca" target="_blank" rel="noreferrer">GitHub</a>
