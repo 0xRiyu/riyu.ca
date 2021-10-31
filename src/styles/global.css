@@ -7,6 +7,9 @@ html {
     src: local('SourceSansPro'), url(fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
 }
 
+html {
+    overflow-y: scroll;
+  }
 p,
 html,
 body,
