@@ -23,7 +23,7 @@ const Header = ({ pageTitle, subTitle, pageHeaderImage, showSocials }) => {
       <div className={pageText}>
         <h1 className={titleWrap}>{pageTitle}</h1>
         <h2 className={titleSubWrap}>{subTitle}</h2>
-        {showSocials == true ? 
+        {showSocials === true ? 
         <div className={socialLinks}>
           <li className={socialListItem}>
             <a

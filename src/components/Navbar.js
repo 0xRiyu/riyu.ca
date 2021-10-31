@@ -17,7 +17,9 @@ const Navbar = ({ siteTitle }) => {
     <nav className={nav}>
       <div className={navContent}>
         <div className={navLogo}>
-          <Link className={navLogoLink} to="/">{siteTitle}</Link>
+          <Link className={navLogoLink} to="/">
+            <img src={require("../images/logo-clear.png").default} alt="Navbar Logo"/>
+          </Link>
         </div>
         <div className={navLink}>
           <div className={navList}>

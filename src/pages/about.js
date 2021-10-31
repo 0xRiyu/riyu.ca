@@ -9,7 +9,7 @@ import {
 const AboutPage = () => {
   return (
     <Layout
-      pageTitle="About"
+      pageTitle="Who I Am"
       pageHeaderImage={webpageBanner}
       showSocials={true}
     >
@@ -37,7 +37,6 @@ const AboutPage = () => {
             This site is a central hub for my personal projects and writings.
             Glad you found it 🙂!
           </p>
-          <p></p>
         </div>
       </div>
     </Layout>

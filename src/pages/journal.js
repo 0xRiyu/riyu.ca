@@ -11,7 +11,7 @@ import {
 const JournalPage = ({ data }) => {
   return (
     <Layout
-      pageTitle="Journal"
+      pageTitle="Web Journal"
       pageHeaderImage={webpageBanner}
       showSocials={true}
     >

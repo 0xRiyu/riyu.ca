@@ -8,8 +8,12 @@
   background-color: transparent;
 }
 
+.nav img {
+    max-height: 90px;
+    margin-top:10px;
+}
+
 .nav-logo {
-  padding-left: 10px;
   flex: 0 1 300px;
   margin: 0;
   font-weight: bolder;

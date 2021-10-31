@@ -2,16 +2,9 @@
   margin: 0 auto;
   max-width: 1200px;
   width: 92vw;
-  min-height: 60vh;
+  min-height: 62vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 44px;
-}
-
-.site-title {
-  font-size: 3rem;
-  color: green;
-  font-weight: 700;
-  margin: 3rem 0;
 }
 
 .copyright {
