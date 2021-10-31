@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import webpageBanner from "../images/quote-book-close.jpg";
+import webpageBanner from "../images/redtree.jpg";
 import {
   contentContainer,
   articleContent,
