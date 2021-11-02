@@ -32,7 +32,7 @@ const AboutPage = () => {
             (それわ難しい), reading light novels, and the like.
             <br />
             <br />
-            If you want to learn more, here's my <a href="#!">CV</a>
+            If you want to learn more, here's my <a href={`resume.pdf`} download><b>CV</b></a>
             <br /> <br />
             This site is a central hub for my personal projects and writings.
             Glad you found it 🙂!
