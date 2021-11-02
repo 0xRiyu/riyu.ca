@@ -21,46 +21,46 @@ const IndexPage = () => {
         <div className={cardContainer}>
           <Card
             frontBackgroundImageUrl="Yare/08.18.2021-sandbox.jpg"
-            backBackgroundImageUrl="Yare/08.18.2021-sandbox.jpg"
+            backBackgroundImageUrl="Yare/yaregif.webm"
             frontContent="Yare"
-            backContent="A Vulkan Renderer Written In C++"
+            backContent="A Vulkan environment renderer written in C++.      In active development!"
             projectPageLink="/projects/yare"
             githubLink="https://github.com/0xRiyu/Yare"
           />
           <Card
             frontBackgroundImageUrl="bonsai/flowers.png"
-            backBackgroundImageUrl="bonsai/flowers.png"
+            backBackgroundImageUrl="bonsai/bonsaigif.webm"
             frontContent="Bonsai"
-            backContent="A DirectX 11 Renderer Written In C++"
+            backContent="A renderer written with C++ and DirectX 11"
             githubLink="https://github.com/0xRiyu/Bonsai-Engine"
           />
           <Card
             frontBackgroundImageUrl="opengl-3dengine/wireframe.png"
-            backBackgroundImageUrl="opengl-3dengine/wireframe.png"
+            backBackgroundImageUrl="opengl-3dengine/shapes.webm"
             frontContent="OpenGL 3D"
-            backContent="A OpenGl Renderer Written In C++"
+            backContent="A renderer written with C++ and OpenGL 4.0"
             githubLink="https://github.com/0xRiyu/OpenGL-3D-Engine"
           />
           <Card
             frontBackgroundImageUrl="website-css-carbon.png"
-            backBackgroundImageUrl="website-css-carbon.png"
+            backBackgroundImageUrl="website.webm"
             frontContent="RiyuDev"
-            backContent="My Personal Site Built With Gatsby"
+            backContent="My personal portfolio and blog - built with Gatsby"
             projectPageLink="/projects/site"
             githubLink="https://github.com/0xRiyu/Riyu.ca"
           />
           <Card
             frontBackgroundImageUrl="Raytrace.png"
-            backBackgroundImageUrl="Raytrace.png"
+            backBackgroundImageUrl="Raytrace.webm"
             frontContent="Raytracer"
             backContent="A Raytracer built with Peter Shirleys 'Raytracing In One Weekend'"
             githubLink="https://github.com/0xRiyu/Raytracer"
           />
           <Card
             frontBackgroundImageUrl="building-escape/buildingescape.jpg"
-            backBackgroundImageUrl="building-escape/buildingescape.gif"
+            backBackgroundImageUrl="building-escape/buildingescape.webm"
             frontContent="Building Escape"
-            backContent="A UnrealEngine 4 Puzzle Game"
+            backContent="An UnrealEngine 4 puzzle game"
             githubLink="https://github.com/0xRiyu/Building-Escape"
           />
         </div>

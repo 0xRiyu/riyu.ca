@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { card, front, back, button, shadow } from "./Card.module.css";
+import { card, front, back, button, shadow, backText } from "./Card.module.css";
 
 const Card = ({
   frontBackgroundImageUrl,
@@ -27,18 +27,12 @@ const Card = ({
       >
         <p>{frontContent}</p>
       </div>
-      <div
-        className={back}
-        style={{
-          backgroundImage:
-            `url(` +
-            require(`../images/${backBackgroundImageUrl}`).default +
-            `)`,
-        }}
-      >
+      <div className={back}>
         <div>
-          <p>{backContent}</p>
-          <br /> <br />
+          <div className={backText}>
+            {backContent}
+          </div>
+          <br />
           {hasProjectPage ? (
             <Link to={projectPageLink}>
               <button className={button}>Project</button>
@@ -48,6 +42,12 @@ const Card = ({
             <button className={button}>GitHub</button>
           </a>
         </div>
+        <video autoPlay loop muted>
+          <source
+            src={require(`../images/${backBackgroundImageUrl}`).default}
+            type="video/webm"
+          />
+        </video>
       </div>
       <div className={shadow} />
     </div>
