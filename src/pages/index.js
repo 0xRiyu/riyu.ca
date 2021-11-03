@@ -45,7 +45,7 @@ const IndexPage = () => {
             frontBackgroundImageUrl="website-css-carbon.png"
             backBackgroundImageUrl="website.webm"
             frontContent="RiyuDev"
-            backContent="My personal portfolio and blog - built with Gatsby"
+            backContent="My personal portfolio and blog - built with Gatsby JS"
             projectPageLink="/projects/site"
             githubLink="https://github.com/0xRiyu/Riyu.ca"
           />
