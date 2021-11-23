@@ -193,8 +193,6 @@
 
 .back .button {
   background: linear-gradient(135deg, #831ae6, #1a57e6);
-  backface-visibility: hidden;
-
 }
 
 .card:hover .back {
@@ -217,7 +215,6 @@
   border-radius: 100px;
   font: inherit;
   border: none;
-  transform-style: preserve-3d;
   text-decoration: none;
   text-shadow: 2px 2px black;
   z-index: -1;
