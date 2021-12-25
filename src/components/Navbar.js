@@ -5,7 +5,6 @@ import {
   nav,
   navLink,
   navLogo,
-  navLogoLink,
   navContent,
   navList,
   navListItem,
@@ -17,7 +16,7 @@ const Navbar = ({ siteTitle }) => {
     <nav className={nav}>
       <div className={navContent}>
         <div className={navLogo}>
-          <Link className={navLogoLink} to="/">
+          <Link to="/">
             <img
               src={require("../images/logo-clear.png").default}
               alt="Navbar Logo"

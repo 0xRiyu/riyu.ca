@@ -28,18 +28,6 @@ const Card = ({
         <p>{frontContent}</p>
       </div>
       <div className={back}>
-        <div>
-          <div className={backText}>{backContent}</div>
-          <br />
-          {hasProjectPage ? (
-            <Link to={projectPageLink}>
-              <button className={button}>Project</button>
-            </Link>
-          ) : null}
-          <a href={githubLink} target="_blank" rel="noreferrer">
-            <button className={button}>GitHub</button>
-          </a>
-        </div>
         <video
           loop
           muted
@@ -49,6 +37,17 @@ const Card = ({
           src={require(`../images/${backBackgroundImageUrl}`).default}
           type="video/webm"
         />
+        <div className={backText}>{backContent}</div>
+        <div>
+          {hasProjectPage ? (
+            <Link to={projectPageLink}>
+              <button className={button}>Project</button>
+            </Link>
+          ) : null}
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            <button className={button}>GitHub</button>
+          </a>
+        </div>
       </div>
       <div className={shadow} />
     </div>

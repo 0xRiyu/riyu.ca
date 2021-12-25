@@ -20,14 +20,6 @@
   font-size: 24px;
 }
 
-.nav-logo-link {
-  display: block;
-  text-decoration: none;
-  outline: 0;
-  width: auto;
-  height: auto;
-}
-
 .nav-content {
   max-width: 1200px;
   display: flex;
@@ -52,14 +44,10 @@
 .nav-list-item {
   margin-left: 10px;
   display: block;
-  text-decoration: none;
-  user-select: none;
 }
 
 .nav-list-item-link {
-  background-color: transparent;
   text-decoration: none;
-  color: inherit;
   display: block;
   padding: 10px;
   font-weight: bolder;
