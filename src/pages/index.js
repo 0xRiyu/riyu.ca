@@ -23,7 +23,7 @@ const IndexPage = () => {
             frontBackgroundImageUrl="yare/08.18.2021-sandbox.webp"
             backBackgroundImageUrl="yare/yaregif-c.webm"
             frontContent="Yare"
-            backContent="A Vulkan environment renderer written in C++.      In active development!"
+            backContent="A Vulkan environment renderer written in C++"
             projectPageLink="/projects/yare"
             githubLink="https://github.com/0xRiyu/Yare"
           />
@@ -53,14 +53,14 @@ const IndexPage = () => {
             frontBackgroundImageUrl="raytracing/Raytrace.webp"
             backBackgroundImageUrl="raytracing/Raytrace.webm"
             frontContent="Raytracer"
-            backContent="A Raytracer built with Peter Shirleys 'Raytracing In One Weekend'"
+            backContent="Completed sample of Peter Shirley's 'Raytracing In One Weekend'"
             githubLink="https://github.com/0xRiyu/Raytracer"
           />
           <Card
             frontBackgroundImageUrl="building-escape/buildingescape.webp"
             backBackgroundImageUrl="building-escape/buildingescape-c.webm"
             frontContent="Building Escape"
-            backContent="An UnrealEngine 4 puzzle game"
+            backContent="An Unreal Engine 4 puzzle game"
             githubLink="https://github.com/0xRiyu/Building-Escape"
           />
         </div>
