@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import webpageDefaultBanner from "../images/street.jpg";
+import webpageDefaultBanner from "../images/banners/street.webp";
 import {
   contentContainer,
   articleContent

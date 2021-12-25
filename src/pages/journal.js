@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
-import webpageBanner from "../images/book-cart.jpg";
+import webpageBanner from "../images/banners/book-cart.webp";
 import {
   contentContainer,
   blogEntryBg,
@@ -26,7 +26,7 @@ const JournalPage = ({ data }) => {
                       node.frontmatter.featuredImage
                         ? require("../images/" + node.frontmatter.featuredImage)
                             .default
-                        : require("../images/street.jpg").default
+                        : require("../images/articles/tree.webp").default
                     }
                     alt="Webpage banner"
                   />

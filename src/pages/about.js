@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import webpageBanner from "../images/redtree.jpg";
+import webpageBanner from "../images/banners/redtree.webp";
 import {
   contentContainer,
   articleContent,

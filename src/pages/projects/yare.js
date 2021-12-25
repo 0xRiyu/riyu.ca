@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import webpageBanner from "../../images/Yare/08.18.2021-sandbox.jpg";
+import webpageBanner from "../../images/Yare/08.18.2021-sandbox.webp";
 import { graphql, useStaticQuery } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import {
