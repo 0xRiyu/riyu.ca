@@ -21,7 +21,7 @@ const IndexPage = () => {
         <div className={cardContainer}>
           <Card
             frontBackgroundImageUrl="yare/08.18.2021-sandbox.webp"
-            backBackgroundImageUrl="yare/yaregif.webm"
+            backBackgroundImageUrl="yare/yaregif-c.webm"
             frontContent="Yare"
             backContent="A Vulkan environment renderer written in C++.      In active development!"
             projectPageLink="/projects/yare"
@@ -29,21 +29,21 @@ const IndexPage = () => {
           />
           <Card
             frontBackgroundImageUrl="bonsai/flowers.webp"
-            backBackgroundImageUrl="bonsai/bonsaigif.webm"
+            backBackgroundImageUrl="bonsai/bonsaigif-c.webm"
             frontContent="Bonsai"
             backContent="A renderer written with C++ and DirectX 11"
             githubLink="https://github.com/0xRiyu/Bonsai-Engine"
           />
           <Card
             frontBackgroundImageUrl="opengl-3dengine/wireframe.webp"
-            backBackgroundImageUrl="opengl-3dengine/shapes.webm"
+            backBackgroundImageUrl="opengl-3dengine/shapes-c.webm"
             frontContent="OpenGL 3D"
             backContent="A renderer written with C++ and OpenGL 4.0"
             githubLink="https://github.com/0xRiyu/OpenGL-3D-Engine"
           />
           <Card
             frontBackgroundImageUrl="website/website-css-carbon.webp"
-            backBackgroundImageUrl="website/website.webm"
+            backBackgroundImageUrl="website/website-c.webm"
             frontContent="RiyuDev"
             backContent="My personal portfolio and blog - built with Gatsby JS"
             projectPageLink="/projects/site"
@@ -58,7 +58,7 @@ const IndexPage = () => {
           />
           <Card
             frontBackgroundImageUrl="building-escape/buildingescape.webp"
-            backBackgroundImageUrl="building-escape/buildingescape.webm"
+            backBackgroundImageUrl="building-escape/buildingescape-c.webm"
             frontContent="Building Escape"
             backContent="An UnrealEngine 4 puzzle game"
             githubLink="https://github.com/0xRiyu/Building-Escape"
