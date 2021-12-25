@@ -29,9 +29,7 @@ const Card = ({
       </div>
       <div className={back}>
         <div>
-          <div className={backText}>
-            {backContent}
-          </div>
+          <div className={backText}>{backContent}</div>
           <br />
           {hasProjectPage ? (
             <Link to={projectPageLink}>
@@ -42,12 +40,15 @@ const Card = ({
             <button className={button}>GitHub</button>
           </a>
         </div>
-        <video autoPlay loop muted>
-          <source
-            src={require(`../images/${backBackgroundImageUrl}`).default}
-            type="video/webm"
-          />
-        </video>
+        <video
+          loop
+          muted
+          preload="metadata"
+          onMouseOver={(event) => event.target.play()}
+          onFocus={(event) => event.target.play()}
+          src={require(`../images/${backBackgroundImageUrl}`).default}
+          type="video/webm"
+        />
       </div>
       <div className={shadow} />
     </div>

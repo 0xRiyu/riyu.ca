@@ -24,6 +24,8 @@
   display: block;
   text-decoration: none;
   outline: 0;
+  width: auto;
+  height: auto;
 }
 
 .nav-content {
