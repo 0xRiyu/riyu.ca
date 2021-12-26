@@ -9,15 +9,16 @@
 }
 
 .nav img {
-    max-height: 90px;
-    margin-top:10px;
+  max-height: 90px;
+  margin-top: 10px;
 }
 
 .nav-logo {
-  flex: 0 1 300px;
-  margin: 0;
-  font-weight: bolder;
-  font-size: 24px;
+  padding-left: 0.5em;
+}
+
+.nav-logo:hover {
+  filter: contrast(0.7);
 }
 
 .nav-content {
@@ -33,6 +34,7 @@
 
 .nav-link {
   text-align: right;
+  padding-right: 1em;
   font-size: 17px;
 }
 
@@ -56,5 +58,5 @@
 }
 
 .nav-list-item-link:hover {
-    color: orangered;
+  color: orange;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { card, front, back, button, shadow, backText } from "./Card.module.css";
+import { card, front, back, button, backText } from "./Card.module.css";
 
 const Card = ({
   frontBackgroundImageUrl,
@@ -36,6 +36,7 @@ const Card = ({
           onFocus={(event) => event.target.play()}
           src={require(`../images/${backBackgroundImageUrl}`).default}
           type="video/webm"
+          playsInline
         />
         <div className={backText}>{backContent}</div>
         <div>
@@ -49,7 +50,6 @@ const Card = ({
           </a>
         </div>
       </div>
-      <div className={shadow} />
     </div>
   );
 };
