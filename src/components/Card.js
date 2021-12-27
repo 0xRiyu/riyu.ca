@@ -25,7 +25,7 @@ const Card = ({
             `)`,
         }}
       >
-        <p>{frontContent}</p>
+      {frontContent}
       </div>
       <div className={back}>
         <video

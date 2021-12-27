@@ -23,8 +23,8 @@ const AboutPage = () => {
             <a href="https://www.amd.com/en" target="_blank" rel="noreferrer">
               AMD
             </a>{" "}
-            within the windows core graphics driver team. Most of my work lies
-            with GPUs, building and designing systems that improve the workflows
+            within the windows core graphics driver team. Most of my work is based around
+            GPU tooling, building and designing systems that improve the workflows
             of other engineers.
             <br />
             Outside of my work, I enjoy building graphics rendering engines
@@ -35,7 +35,7 @@ const AboutPage = () => {
             If you want to learn more, here's my <a href={`resume.pdf`} download><b>CV</b></a>
             <br /> <br />
             This site is a central hub for my personal projects and writings.
-            Glad you found it 🙂!
+            Happy you found it!
           </p>
         </div>
       </div>

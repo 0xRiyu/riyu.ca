@@ -35,13 +35,13 @@ const Navbar = ({ siteTitle }) => {
                 About
               </Link>
             </li>
-            {/*
+            {
             <li className={navListItem}>
               <Link className={navListItemLink} to="/journal">
                 Journal
               </Link>
             </li>
-            */}
+            }
           </div>
         </div>
       </div>

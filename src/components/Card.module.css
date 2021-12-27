@@ -17,7 +17,7 @@
   -o-animation: fadein 3s, slideOnLoad 1s 1; /* Opera < 12.1 */
   animation: fadein 3s, slideOnLoad 1s 1;
   animation-fill-mode: forwards;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(3px 2px 1px rgba(0, 0, 0, 0.55));
 }
 
 @media screen and (max-width: 800px) {
@@ -140,9 +140,9 @@
     1px 1px 0 #000;
   font-size: 1.2em;
   font-family: sans-serif;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 5px;
+  border-radius: 5px;
   pointer-events: none;
   z-index: 1;
 }

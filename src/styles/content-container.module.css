@@ -1,5 +1,5 @@
 .content-container {
-  max-width: 1200px;
+  max-width: 1175px;
   width: 92vw;
   min-height: 170px;
   margin: 0 auto;
@@ -15,19 +15,15 @@
 }
 
 .article-content {
-  width: 950px;
+  width: 850px;
   max-width: 100%;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  margin: 20px auto auto;
+  padding: 0.5em 2em;
+  margin: 0 auto;
   margin-top: -50px;
   border-radius: 15px;
   overflow: hidden;
   background-color: #1d2125;
   filter: drop-shadow(6px 7px 1px rgba(0, 0, 0, 0.55));
-  border: 2px solid black;
   position: relative;
   -webkit-animation: fadein 2s, slideOnLoad 1.5s 1; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s, slideOnLoad 1.5s 1; /* Firefox < 16 */
@@ -36,29 +32,26 @@
   animation: fadein 2s, slideOnLoad 1.5s 1;
   animation-fill-mode: forwards;
   font-family: SourceSansPro, Helvetica, sans-serif;
-  font-size: 21px;
-  line-height: 2;
 }
 
 .article-content a {
   color: darkorange;
   text-decoration: none;
   font-family: SourceSansPro, Helvetica, sans-serif;
-  font-size: 21px;
 }
 
 .article-entry {
+    color: white;
     width: 850px;
-    height: 100px;
+    height: 80px;
     max-width: 100%;
     padding: 20px;
     margin: 20px auto auto;
     margin-top: -40px;
     border-radius: 15px;
     overflow: hidden;
-    background-color: #2b3135;
+    background-color: #1d2125;
     filter: drop-shadow(6px 7px 1px rgba(0, 0, 0, 0.55));
-    border: 2px solid black;
     position: relative;
     -webkit-animation: fadein 2s, slideOnLoad 1.5s 1; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s, slideOnLoad 1.5s 1; /* Firefox < 16 */
@@ -66,6 +59,13 @@
     -o-animation: fadein 2s, slideOnLoad 1.5s 1; /* Opera < 12.1 */
     animation: fadein 2s, slideOnLoad 1.5s 1;
     animation-fill-mode: forwards;
+    line-height: 0;
+    font-size: 15px;
+  }
+
+  .article-entry h2 {
+      margin: 0;
+      margin-top: 2px;
   }
 
 @keyframes slideOnLoad {

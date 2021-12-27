@@ -1,16 +1,21 @@
 html {
-  background-color: #16181A;
+  background-color: #16181a;
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
-    src: local('SourceSansPro'), url(fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
+  font-family: "SourceSansPro";
+  src: local("SourceSansPro"),
+    url(fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format("truetype");
 }
 
 html {
-    overflow-y: scroll;
-  }
-p,
+  overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+}
+
 html,
 body,
 div,
@@ -20,8 +25,10 @@ h2,
 header,
 a {
   color: white;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  text-shadow: 2px 2px #000;
+}
+
+p {
+    color: #d8d4cf;
+    line-height: 1.8;
+    font-size: 18px;
 }
