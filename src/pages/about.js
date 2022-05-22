@@ -16,26 +16,23 @@ const AboutPage = () => {
       <div className={contentContainer}>
         <div className={articleContent}>
           <p>
-            I'm <b>Drew Cornfield</b>, a Canadian software developer, also known
-            as <em>Riyu</em> by some of my peers.
+            I'm <b>Drew Cornfield</b>, a software engineer from Canada.
             <br />
-            <br />I currently develop internal software tools at{" "}
+            <br />
+            My career focus has been working on graphics debugging tools, currently at{" "}
+            <a href="https://www.nvidia.com/" target="_blank" rel="noreferrer">
+            NVIDIA
+            </a>
+            , prior{" "}
             <a href="https://www.amd.com/en" target="_blank" rel="noreferrer">
-              AMD
-            </a>{" "}
-            within the windows core graphics driver team. Most of my work is based around
-            GPU tooling, building and designing systems that improve the workflows
-            of other engineers.
+            AMD
+            </a>
+            .
             <br />
-            Outside of my work, I enjoy building graphics rendering engines
-            (most recently with Vulkan), studying Japanese
+            Outside of my work, I enjoy learning about and building small graphics rendering projects, studying Japanese
             (それわ難しい), reading light novels, and the like.
             <br />
-            <br />
-            If you want to learn more, here's my <a href={`resume.pdf`} download><b>CV</b></a>
-            <br /> <br />
-            This site is a central hub for my personal projects and writings.
-            Happy you found it!
+            <br/ >All views are my own and do not reflect that of my employer.
           </p>
         </div>
       </div>
