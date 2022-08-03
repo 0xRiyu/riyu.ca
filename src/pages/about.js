@@ -30,7 +30,7 @@ const AboutPage = () => {
             .
             <br />
             Outside of my work, I enjoy learning about and building small graphics rendering projects, studying Japanese
-            (それわ難しい), reading light novels, and the like.
+            , reading light novels, and the like.
             <br />
             <br/ >All views are my own and do not reflect that of my employer.
           </p>
